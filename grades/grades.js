@@ -9,8 +9,16 @@ var lowestScore = 100;
 var highestScore = 0;
 
 for (var i = 0; i < scores.length; i++) {
-	var score = scores[i];
-	switch (score) {
+	var currentscore = scores[i];
+	console.log(" ----- currentscore", currentscore);
+	if (currentscore < lowestScore) {
+		lowestScore = currentscore;
+		console.log("lowestscore", lowestScore);
+	} else if (currentscore > highestScore) {
+		highestScore = currentscore;
+		console.log("highestscore", highestScore);
+	};
+	switch (currentscore) {
 		case 50:
 		case 51:
 		case 52:
@@ -77,18 +85,6 @@ for (var i = 0; i < scores.length; i++) {
 			console.log("A");
 			scoreA += 1;
 			break;
-	};
-};
-
-for (var i = 0; i < scores.length; i++) {
-	var currentscore = scores[i];
-	console.log(" ----- currentscore", currentscore);
-	if (currentscore < lowestScore) {
-		lowestScore = currentscore;
-		console.log("lowestscore", lowestScore);
-	} else if (currentscore > highestScore) {
-		highestScore = currentscore;
-		console.log("highestscore", highestScore);
 	};
 };
 

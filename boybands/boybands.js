@@ -22,8 +22,8 @@ for (var i = 0; i < bands.length; i += 1) {
   // Add the band names into the correct <div>
   currentBand = bands[i];
   bandElement.innerHTML += "<p>";
-  bandElement.innerHTML  += currentBand;
-  bandElement.innerHTML  += "</p>";
+  bandElement.innerHTML += currentBand;
+  bandElement.innerHTML += "</p>";
 
   // Add the veggie names into the correct <div>
   currentVeggie = vegetables[i];

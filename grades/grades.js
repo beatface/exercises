@@ -7,7 +7,6 @@ var scoreD = 0;
 var scoreF = 0;
 var lowestScore = 100;
 var highestScore = 0;
-var lastScore = scores[0];
 
 for (var i = 0; i < scores.length; i++) {
 	var score = scores[i];
@@ -91,8 +90,6 @@ for (var i = 0; i < scores.length; i++) {
 		highestScore = currentscore;
 		console.log("highestscore", highestScore);
 	};
-	lastScore = currentscore;
-	console.log("lastscore", lastScore);
 };
 
 

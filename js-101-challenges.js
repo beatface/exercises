@@ -38,16 +38,13 @@ for (var i = 3; i <= 500; i++) {
 console.log("Challenge 3");
 
 var sumOfSquares = 0;
+var sumOfNums = 0;
 for (var i = 1; i <= 10; i++) {
 	var num = i * i;
 	sumOfSquares += num;
-}
-console.log("sum of squares of numbers", sumOfSquares);
-
-var sumOfNums = 0;
-for (var i = 0; i <= 10; i++) {
 	sumOfNums += i;
 }
+console.log("sum of squares of numbers", sumOfSquares);
 console.log("sum of natural numbers", sumOfNums);
 
 var difference = sumOfSquares - sumOfNums;

@@ -12,14 +12,8 @@ planets.forEach(function(planet) {
 // Use the map method to create a new array where the first letter of each planet is capitalized
 
 var capitalizedPlanet = planets.map(function(planet) {
-	var firstLetter = planet.slice(0, 1);
-	firstLetter = firstLetter.toUpperCase();
-	var remainingLetters = planet.slice(1);
-	planet = firstLetter + remainingLetters;
-	// console.log(firstLetter);
-	// console.log(remainingLetters);
-	// console.log(planet);
-	return planet;
+	var firstLetter = planet.split("")[0].toUpperCase();
+	return firstLetter + planet.slice(1);
 });
 console.log(capitalizedPlanet);
 

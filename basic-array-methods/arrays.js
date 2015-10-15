@@ -12,18 +12,27 @@
 */
 
 function reversal(origString) {
-
+	var reversedString = origString.split("").reverse().join("");
+	document.write("<div>" + reversedString + "</div>");
+	return reversedString;
 }
 
-function alphabits() {
-
+function alphabits(origString) {
+	var alphabetical = origString.split("").sort().join("");
+	document.write("<div>" + alphabetical + "</div>");
+	return alphabetical;
 }
 
-function palindrome() {
-
+function palindrome(origString) {	
+	var reversedString = reversal(origString);
+	if (reversedString === origString) {
+		document.write("<div>" + testString + " is a palindrome.");
+	} else {
+		document.write("<div>" + testString + " is not a palindrome.");
+	}
 }
 
-var testString = "";
+var testString = "emma";
 reversal(testString);
 alphabits(testString);
 palindrome(testString);

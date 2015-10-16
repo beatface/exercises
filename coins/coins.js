@@ -19,7 +19,7 @@ function coinCounter(dollarAmount) { // Initialize a JavaScript object to hold t
 	change = change % .1;
 	console.log("dimechange", change);
 	coinPurse.nickels = parseInt(change / .05);
-	change = change % .0-5;
+	change = change % .05;
 	console.log("nickelchange", change);
 	coinPurse.pennies = parseInt(change / .01);
 	return coinPurse; 

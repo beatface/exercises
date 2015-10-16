@@ -57,6 +57,13 @@ function determineConverter (clickEvent) {
 // Assign a function to be executed when the button is clicked
 submitButton.addEventListener("click", determineConverter);
 
+inputTemp.addEventListener("keydown", function(event) {
+  if(event.keyCode === 13) {
+    event.preventDefault();
+    submitButton.click();
+  };
+});
+
 function clearForm (clickEvent) {
   document.getElementById("form").reset();
   outputElement.innerHTML = "";
@@ -65,4 +72,6 @@ function clearForm (clickEvent) {
 var clearButton = document.getElementById("clear");
 
 clearButton.addEventListener("click", clearForm);
+
+
 

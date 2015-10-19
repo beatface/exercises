@@ -32,12 +32,18 @@ function toCelsius(value) {
   var num = Number(value);
   var output = (num - 32) * 5/9;
   outputElement.innerHTML = output + " degrees Celsius";
+  if (Number(output) > 32) {
+    inputTemp.classList.add("red");
+  }
 }
 
 function toFahrenheit (value) {
   var num = Number(value);
   var output = num * 9/5 + 32;
   outputElement.innerHTML = output + " degrees Fahrenheit";
+  if (Number(output) > 90) {
+    inputTemp.classList.add("red");
+  }
 }
 
 // Get a reference to the button element in the DOM

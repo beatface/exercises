@@ -1,0 +1,16 @@
+#input-container, #result-container {
+	max-width: 80%;
+	margin: 45px auto 0;
+}
+
+button {
+	margin: 5px 8px 0 0;
+}
+
+.inputs {
+	margin: 15px 0;
+}
+
+#result-container {
+	font-size: 2.5em;
+}

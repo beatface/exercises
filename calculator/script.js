@@ -69,19 +69,35 @@ document.querySelector("body").addEventListener("click", function(event) {
   var second = secondInput.value;
   var thisElement = event.target;
   if (thisElement.id === "add") {
-    resultDiv.innerHTML = calculateNum(parseInt(first), parseInt(second), addNum);
+    resultDiv.innerHTML = first;
+    resultDiv.innerHTML += " + ";
+    resultDiv.innerHTML += second;
+    resultDiv.innerHTML += " = ";
+    resultDiv.innerHTML += calculateNum(parseInt(first), parseInt(second), addNum);
     firstInput.value = "";
     secondInput.value = "";
   } else if (thisElement.id === "subtract") {
-    resultDiv.innerHTML = calculateNum(parseInt(first), parseInt(second), subtractNum);
+    resultDiv.innerHTML = first;
+    resultDiv.innerHTML += " - ";
+    resultDiv.innerHTML += second;
+    resultDiv.innerHTML += " = ";
+    resultDiv.innerHTML += calculateNum(parseInt(first), parseInt(second), subtractNum);
     firstInput.value = "";
     secondInput.value = "";
   } else if (thisElement.id === "multiply") {
-    resultDiv.innerHTML = calculateNum(parseInt(first), parseInt(second), multiplyNum);
+    resultDiv.innerHTML = first;
+    resultDiv.innerHTML += " x ";
+    resultDiv.innerHTML += second;
+    resultDiv.innerHTML += " = ";
+    resultDiv.innerHTML += calculateNum(parseInt(first), parseInt(second), multiplyNum);
     firstInput.value = "";
     secondInput.value = "";
   } else if (thisElement.id === "divide") {
-    resultDiv.innerHTML = calculateNum(parseInt(first), parseInt(second), divideNum);
+    resultDiv.innerHTML = first;
+    resultDiv.innerHTML += " / ";
+    resultDiv.innerHTML += second;
+    resultDiv.innerHTML += " = ";
+    resultDiv.innerHTML += calculateNum(parseInt(first), parseInt(second), divideNum);
     firstInput.value = "";
     secondInput.value = "";
   }
